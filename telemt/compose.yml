@@ -2,20 +2,22 @@ services:
   telemt:
     image: raylabpro/telemt
     restart: unless-stopped
-    ports:
-      - "443:443"
-      - "9090:9090"
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
-    cap_add:
-      - NET_BIND_SERVICE
-      # - CAP_NET_ADMIN
-    ulimits:
-      nofile:
-        soft: 65536
-        hard: 65536
+
+    network_mode: host
+    # ports:
+    #   - "443:443"
+    #   - "9090:9090"
+    # security_opt:
+    #   - no-new-privileges:true
+    # cap_drop:
+    #   - ALL
+    # cap_add:
+    #   - NET_BIND_SERVICE
+    #   # - CAP_NET_ADMIN
+    # ulimits:
+    #   nofile:
+    #     soft: 65536
+    #     hard: 65536
 
     command: ["/app/config.toml"]
     environment:
