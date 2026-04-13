@@ -1,8 +1,0 @@
-services:
-  teleproxy:
-    image: "$TELEPROXY_IMAGE"
-    ports:
-      - "443:443"
-      - "8888:8888"
-    environment:
-      SECRET: afe61ff35925f9b748f7ffaf08856650
