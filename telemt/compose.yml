@@ -24,7 +24,7 @@ services:
     # read_only: true
     volumes:
       - ./config.toml:/app/config.toml:ro
-      - cache:/app/cache
+      - cache:/app/cache:rw
       # - "./config.toml:/etc/telemt/config.toml:ro"
       - "/etc/timezone:/etc/timezone:ro"
       - "/etc/localtime:/etc/localtime:ro"
