@@ -1,7 +1,8 @@
 services:
   teleproxy:
     image: "$TELEPROXY_IMAGE"
+    volumes:
+      - ./data:/opt/teleproxy/data
     ports:
       - "443:443"
       - "8888:8888"
-
