@@ -23,8 +23,6 @@ sudo journalctl --vacuum-time=3d
 
 echo "System updated and temporary data cleared."
 
-sudo apt install -y docker git vim
-
 # Add Docker's official GPG key:
 sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -40,3 +38,7 @@ Components: stable
 Architectures: $(dpkg --print-architecture)
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
+
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo apt install -y git vim
