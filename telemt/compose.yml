@@ -8,8 +8,7 @@ services:
       - "9091:9091"
     volumes:
       - ./config.toml:/app/config.toml:ro
-      - cache:/app/cache
-    read_only: true
+      # - cache:/app/cache
     cap_drop:
       - ALL
     cap_add:
