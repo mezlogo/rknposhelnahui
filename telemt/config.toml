@@ -4,7 +4,7 @@
 
 # === General Settings ===
 [general]
-use_middle_proxy = true
+use_middle_proxy = false
 # Global ad_tag fallback when user has no per-user tag in [access.user_ad_tags]
 # ad_tag = "00000000000000000000000000000000"
 # Per-user ad_tag in [access.user_ad_tags] (32 hex from @MTProxybot)
@@ -55,4 +55,5 @@ tls_front_dir = "tlsfront"   # Cache directory for TLS emulation
 
 [access.users]
 # format: "username" = "32_hex_chars_secret"
-hello = "00000000000000000000000000000000"
+user0 = "00000000000000000000000000000000"
+user1 = "93b8f1d3c5e2a4b67890def123456789"
