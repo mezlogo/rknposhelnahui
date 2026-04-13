@@ -49,7 +49,7 @@ ip = "0.0.0.0"
 
 # === Anti-Censorship & Masking ===
 [censorship]
-tls_domain = "github.com"    # Fake-TLS / SNI masking domain used in generated ee-links
+tls_domain = "petrovich.ru"    # Fake-TLS / SNI masking domain used in generated ee-links
 mask = true
 tls_emulation = true         # Fetch real cert lengths and emulate TLS records
 tls_front_dir = "tlsfront"   # Cache directory for TLS emulation
