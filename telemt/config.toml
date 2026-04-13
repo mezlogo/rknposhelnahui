@@ -43,9 +43,13 @@ whitelist = ["127.0.0.1/32", "::1/128"]
 minimal_runtime_enabled = false
 minimal_runtime_cache_ttl_ms = 1000
 
+[server.conntrack_control]
+inline_conntrack_control = false
+
 # Listen on multiple interfaces/IPs - IPv4
 [[server.listeners]]
 ip = "0.0.0.0"
+
 
 # === Anti-Censorship & Masking ===
 [censorship]
