@@ -8,6 +8,7 @@ services:
       - "9091:9091"
     volumes:
       - ./config.toml:/app/config.toml:ro
+      - cache:/app/cache
     read_only: true
     cap_drop:
       - ALL
@@ -15,3 +16,5 @@ services:
       - NET_BIND_SERVICE
     ulimits:
       nofile: 65536
+volumes:
+  cache:
