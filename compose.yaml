@@ -3,4 +3,5 @@ services:
     image: "$TELEPROXY_IMAGE"
     ports:
       - "443:443"
+      - "8888:8888"
 
