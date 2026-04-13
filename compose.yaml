@@ -4,5 +4,5 @@ services:
     ports:
       - "443:443"
       - "8888:8888"
-    env:
+    environment:
       SECRET: afe61ff35925f9b748f7ffaf08856650
