@@ -1,0 +1,6 @@
+services:
+  teleproxy:
+    image: "$TELEPROXY_IMAGE"
+    ports:
+      - "443:443"
+
