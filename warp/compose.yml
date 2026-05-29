@@ -1,0 +1,9 @@
+services:
+  warp:
+    image: ghcr.io/kingcc/warproxy:latest
+    environment:
+      - SOCKS5_PORT=1080
+    volumes:
+      - ./config:/config  # Сохраняем учетку WARP, чтобы не регистрироваться заново при перезапуске
+    ports:
+      - "127.0.0.1:1080:1080"
